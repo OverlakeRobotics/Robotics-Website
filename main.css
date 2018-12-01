@@ -1,0 +1,62 @@
+body{
+    margin:0px;
+    padding: 0px;
+
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 40% 20% 40%;
+    place-items: center center;
+    width: 100vw;
+    height: 100vh;
+    justify-items: center;
+  
+}
+.titlePage{
+    background: url("backgroundReal.png");
+    background-repeat: none;
+    background-size: cover;
+}
+
+.title{
+    font-size: 6em;
+    text-align: center;
+    color: whitesmoke;
+
+}
+.disc{
+    text-align: center;
+    color: lightgrey;
+
+}
+
+.buttons{
+    color: #69CCF9;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    place-items: center center;
+}
+
+.button{
+    border: none;
+    color: #69CCF9;
+    background-color:#69CCF9;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:10px;
+    
+}
+.buttonText {
+    color: black;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .title {
+        font-size: 3rem;
+    }
+}
