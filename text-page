@@ -1,0 +1,9 @@
+body {
+    margin:100px;
+    background-color: #00030e;
+    color: #FFFFFF;
+}
+
+h2 {
+    color: #9f4300;
+}
