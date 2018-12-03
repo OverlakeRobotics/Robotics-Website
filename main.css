@@ -40,16 +40,16 @@ body{
     color: #000307;
     background-color:#9f4300;
 
-    padding: 15px 32px;
+    padding: 10px 32px;
     text-align: center;
     text-decoration: none;
-    margin: 4px 2px;
+    margin: 10px 5px;
     cursor: pointer;
     border-radius:10px;
 }
 
 .button:hover {
-    color: #FFFFFF;
+    color: whitesmok;
 }
 
 @media only screen and (max-width: 1000px) {
