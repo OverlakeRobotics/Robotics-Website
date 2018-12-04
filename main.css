@@ -5,7 +5,7 @@ body{
 
 .container{
     display: grid;
-    grid-template-rows: 40% 20% 40%;
+    grid-template-rows: 20% 40% 40%;
     place-items: center center;
     width: 100vw;
     height: 100vh;
@@ -24,6 +24,7 @@ body{
     color: whitesmoke;
 
 }
+
 .disc{
     text-align: center;
     color: lightgrey;
@@ -35,15 +36,19 @@ body{
     grid-template-columns: 33% 33% 33%;
 }
 
+.icon {
+    font-size: 32px;
+}
+
 .button{
     border: none;
     color: #000307;
     background-color:#9f4300;
 
-    padding: 10px 32px;
+    padding: 12px 32px;
     text-align: center;
     text-decoration: none;
-    margin: 10px 5px;
+    margin: 5px 5px;
     cursor: pointer;
     border-radius:10px;
 }
