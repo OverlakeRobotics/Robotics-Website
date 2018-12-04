@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="imgaes/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -27,14 +27,13 @@
 
 </head>
 
-<body>
+<body onload="typeText()">
     <section class="titlePage">
         <div class="container">
             <div></div>
             <div>
-                <h1 class="title">Welcome to Overlake FTC 7330</h1>
-                <br>
-                <h3 class="disc">View Our</h3>
+                <h1 id="titleText" class="title"></h1>
+                <h3 id="desc" class="disc"></h3>
             </div>
             <div class="buttons">
                 <a class="button" href="about.html">
@@ -49,5 +48,33 @@
             </div>
         </div>
     </section>
-
+    <script>
+        var i = 0;
+        var y = 0;
+        var txt = 'Welcome to Overlake FTC 7330';
+        var txt2 = 'View Our Stuff:';
+        var speed = 40;
+        function typeText() {
+                if (i < txt.length) {
+                    document.getElementById("titleText").innerHTML = 
+                        document.getElementById("titleText").innerHTML.substring(0, i) + txt.charAt(i) + "_";
+                    i++;
+                    setTimeout(typeText, speed);
+                }
+                if (i == txt.length) {
+                    typeText2();
+                    document.getElementById("titleText").innerHTML = 
+                        document.getElementById("titleText").innerHTML.substring(0, i);
+                }
+            }
+            function typeText2() {
+                if (y < txt2.length) {
+                    document.getElementById("desc").innerHTML += txt2.charAt(y);
+                    y++;
+                    setTimeout(typeText, speed);
+                }
+            }
+    </script>
 </body
+
+
