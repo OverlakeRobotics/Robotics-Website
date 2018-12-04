@@ -59,6 +59,13 @@ body{
 
 @media only screen and (max-width: 1000px) {
     .title {
-        font-size: 3rem;
+        font-size: 2.25rem;
+    }
+    .icon {
+        font-size: 26px;
+    }
+    .button {
+    padding: 6px 20px;
+
     }
 }
