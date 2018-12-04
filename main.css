@@ -54,7 +54,7 @@ body{
 }
 
 .button:hover {
-    color: whitesmok;
+    color: whitesmoke;
 }
 
 @media only screen and (max-width: 1000px) {
