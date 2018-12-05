@@ -1,5 +1,5 @@
 # Robotics-Website
 nice
 ---
-permalink: /index.html
+permalink: pages/index.html
 ---
