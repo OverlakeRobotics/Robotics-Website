@@ -33,11 +33,12 @@ body{
     text-align: center;
     color: lightgrey;
 }
-
+/*
 .buttons{
     display:grid;
     grid-template-columns: 33% 33% 33%;
 }
+*/
 
 .icon {
     font-size: 32px;
